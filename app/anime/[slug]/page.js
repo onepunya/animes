@@ -1,4 +1,4 @@
-import { getAnimeDetail } from '@/lib/api';
+import { getAnimeDetail } from '../../../lib/api';
 import Link from 'next/link';
 
 export default async function DetailPage({ params }) {
