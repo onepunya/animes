@@ -1,4 +1,4 @@
-import { getEpisode } from '@/lib/api';
+import { getEpisode } from '../../../lib/api';
 
 export default async function WatchPage({ params }) {
   const data = await getEpisode(params.slug);
