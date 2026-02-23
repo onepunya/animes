@@ -1,4 +1,4 @@
-import { getHome } from '@/lib/api';
+import { getHome } from '../lib/api';
 import Link from 'next/link';
 
 export default async function HomePage() {
