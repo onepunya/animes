@@ -1,0 +1,16 @@
+{  "name": "Indotaku - Nonton Anime Indo",
+  "short_name": "Indotaku",
+  "description": "Streaming Anime Subtitle Indonesia Gratis",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b0c10",
+  "theme_color": "#f97316",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/864/864818.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
