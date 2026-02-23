@@ -1,30 +1,23 @@
 import './global.css';
 
 export const metadata = {
-  title: 'Indotaku - Nonton Anime Indo',
-  description: 'Streaming anime subtitle Indonesia gratis',
+  title: 'Indotaku - Nonton Anime Indo Gratis',
+  description: 'Streaming Anime Subtitle Indonesia Terlengkap',
+  manifest: '/manifest.json', // Memanggil file PWA
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="id">
       <body className="bg-[#0b0c10] text-gray-100 antialiased">
-        <nav className="fixed top-0 w-full bg-[#1f2833]/90 backdrop-blur-md z-50 p-4 border-b border-gray-800">
-          <div className="max-w-6xl mx-auto flex justify-between items-center">
-            <h1 className="text-xl font-black text-orange-500 tracking-tighter">INDOTAKU</h1>
+        <nav className="border-b border-gray-800 bg-black/50 backdrop-blur-md sticky top-0 z-50">
+          <div className="max-w-7xl mx-auto px-4 h-16 flex items-center">
+            <Link href="/" className="text-2xl font-black text-orange-500 tracking-tighter">
+              INDO<span className="text-white">TAKU</span>
+            </Link>
           </div>
         </nav>
-        
-        <main className="pt-20 pb-20 max-w-6xl mx-auto px-4">
-          {children}
-        </main>
-
-        {/* Mobile Navigation Bar */}
-        <div className="fixed bottom-0 w-full bg-[#1f2833] border-t border-gray-800 flex justify-around p-3 md:hidden">
-          <button className="text-orange-500 text-xs">Home</button>
-          <button className="text-gray-400 text-xs">Search</button>
-          <button className="text-gray-400 text-xs">Genre</button>
-        </div>
+        <main>{children}</main>
       </body>
     </html>
   );
